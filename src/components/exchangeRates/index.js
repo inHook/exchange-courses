@@ -25,6 +25,7 @@ export class ExchangeRates extends React.PureComponent {
                             this.buildForGraph(data);
                         }
                     })
+                    .catch(error => console.error(error));
             }, `${i}000`);
         }
     };
