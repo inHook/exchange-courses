@@ -1,0 +1,17 @@
+.courses {
+  width: max-content;
+  margin: 30px auto auto;
+
+  &__table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    width: 100%;
+
+    tr,
+    td {
+      padding: 5px;
+      border: 1px solid black;
+    }
+  }
+}
+
