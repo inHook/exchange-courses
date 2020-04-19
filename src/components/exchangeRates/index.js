@@ -39,6 +39,7 @@ export class ExchangeRates extends React.PureComponent {
         }
 
         course.push({
+            id: Math.random(),
             base,
             date,
             ...currency,
@@ -79,7 +80,7 @@ export class ExchangeRates extends React.PureComponent {
 
                     <tbody>
                     {course.map(date => (
-                        <tr>
+                        <tr key={date.id}>
                             <td>{date.date}</td>
                             <td>{date.USD}</td>
                             <td>{date.EUR}</td>
